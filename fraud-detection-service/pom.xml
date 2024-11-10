@@ -53,11 +53,28 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+
+        <!-- Loki: Aggregates the logs -->
         <dependency>
             <groupId>com.github.loki4j</groupId>
             <artifactId>loki-logback-appender</artifactId>
             <version>1.3.2</version>
         </dependency>
+
+        <!-- To gather metrics, we need to enable spring boot actuator by adding its dependency -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+        <!-- Spring boot uses Micrometer to collect metrics, which exposes an endpoint that can be scraped by Prometheus  -->
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-registry-prometheus</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

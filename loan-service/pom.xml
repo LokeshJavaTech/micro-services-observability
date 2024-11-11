@@ -68,6 +68,32 @@
 			<scope>runtime</scope>
 		</dependency>
 
+		<!-- Creates Tracing using Micrometer. Micrometer uses "OpenZipkin Brave" or "Open Telemetry" project to implement the distributed tracing -->
+		<dependency>
+			<groupId>io.micrometer</groupId>
+			<artifactId>micrometer-tracing-bridge-brave</artifactId>
+		</dependency>
+
+		<!-- This library will report the created traces to Tempo -->
+		<dependency>
+			<groupId>io.zipkin.reporter2</groupId>
+			<artifactId>zipkin-reporter-brave</artifactId>
+		</dependency>
+
+		<!-- To enable tracing of database calls -->
+		<dependency>
+			<groupId>net.ttddyy.observation</groupId>
+			<artifactId>datasource-micrometer-spring-boot</artifactId>
+			<version>1.0.1</version>
+		</dependency>
+
+		<!-- We are using AOP for DB calls tracing:: @Observed annotation and ObservationConfig class -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>

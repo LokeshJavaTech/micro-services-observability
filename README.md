@@ -1,5 +1,6 @@
 This repository contains source code for Spring Boot 3 Observability with Grafana Stack - Loki, Tempo, Prometheus, Grafana  
 https://www.youtube.com/watch?v=PT2yZTBnUwQ  
+https://programmingtechie.com/articles/spring-boot3-observability-grafana-stack
 
 ![image](https://github.com/user-attachments/assets/cb6f6bbc-24ad-4e00-8843-e234e359beea)
 --------------------------------------------------------------------------------------------------------------  
@@ -28,3 +29,20 @@ Start LoanServiceApplication
 
 git clone https://github.com/LokeshJavaTech/micro-services-observability.git --branch master
 cd micro-services-observability  
+
+We can see all the actuator data on below endpoints:  
+
+loan-service:
+http://localhost:8080/actuator/health  
+http://localhost:8080/actuator/info  
+http://localhost:8080/actuator/metrics  
+http://localhost:8080/actuator/prometheus  
+
+fraud-detection-service:  
+http://localhost:8081/actuator/health  
+http://localhost:8081/actuator/info  
+http://localhost:8081/actuator/metrics  
+http://localhost:8081/actuator/prometheus  
+
+
+Grafana URL: http://localhost:3000/

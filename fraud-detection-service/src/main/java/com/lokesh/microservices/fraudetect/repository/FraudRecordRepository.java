@@ -1,5 +1,6 @@
 package com.lokesh.microservices.fraudetect.repository;
 
+import io.micrometer.observation.annotation.Observed;
 import lombok.RequiredArgsConstructor;
 import org.springframework.jdbc.core.simple.JdbcClient;
 import org.springframework.stereotype.Repository;
@@ -7,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Repository
 @RequiredArgsConstructor
+@Observed
 public class FraudRecordRepository {
 
     private final JdbcClient jdbcClient;

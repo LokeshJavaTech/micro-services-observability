@@ -30,7 +30,7 @@ services:
     command: ['-config.file=/etc/tempo.yaml']
     volumes:
       - ./docker/tempo/tempo.yml:/etc/tempo.yaml:ro
-      - ./docker/tempo/tempo-data:/tmp/tempo
+      - ./volume_tempo_data:/tmp/tempo
     ports:
       - '3110:3100' # Tempo
       - '9411:9411' # zipkin

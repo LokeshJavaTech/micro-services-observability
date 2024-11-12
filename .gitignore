@@ -34,3 +34,5 @@ build/
 
 ## Removing mysql data files to be commited
 volume_mysql_data
+## Removing tempo data files to be commited
+volume_tempo_data

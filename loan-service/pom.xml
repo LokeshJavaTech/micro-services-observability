@@ -61,7 +61,7 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
-		<!-- Spring boot uses Micrometer to collect metrics, which exposes an endpoint that can be scraped by Prometheus  -->
+		<!-- Spring boot uses Micrometer to collect metrics, which exposes an endpoint that is scraped by Prometheus  -->
 		<dependency>
 			<groupId>io.micrometer</groupId>
 			<artifactId>micrometer-registry-prometheus</artifactId>

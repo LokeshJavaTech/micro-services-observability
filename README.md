@@ -2,7 +2,7 @@ This repository contains source code for Spring Boot 3 Observability with Grafan
 https://www.youtube.com/watch?v=PT2yZTBnUwQ  
 https://programmingtechie.com/articles/spring-boot3-observability-grafana-stack
 
-![image](https://github.com/user-attachments/assets/cb6f6bbc-24ad-4e00-8843-e234e359beea)
+![architecture.png](architecture.png)
 --------------------------------------------------------------------------------------------------------------  
 # initial-commit branch
 
